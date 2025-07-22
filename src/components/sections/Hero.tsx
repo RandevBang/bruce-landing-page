@@ -35,8 +35,9 @@ export function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
+              variant="outline"
               size="lg" 
-              className="border-white bg-white text-[#131A46] hover:bg-white/10 text-lg px-8 py-3 h-auto font-semibold"
+              className="border-white bg-white text-[#131A46] hover:bg-white/10 hover:text-white text-lg px-8 py-3 h-auto font-semibold"
             >
               Get Your Quick Quote
             </Button>

@@ -46,7 +46,7 @@ export function Hero() {
               size="lg"
               className="border-white text-[#131A46] hover:bg-white/10 hover:text-white text-lg px-8 py-3 h-auto font-semibold"
             >
-              Learn More
+              Learn More (TEST)
             </Button>
           </div>
           

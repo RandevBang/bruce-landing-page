@@ -66,8 +66,8 @@ export function Footer() {
 
           {/* Bottom Bar */}
           <div className="border-t border-bruce-navy-700/30 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <div className="text-sm text-bruce-navy-200 mb-4 md:mb-0">
-              © 2024 Bruce Insurance. All rights reserved. AFSL License #XXXXXX
+            <div className="text-sm text-blue-200 mb-4 md:mb-0">
+              &copy; {new Date().getFullYear()} Bruce Insurance. All rights reserved. AFSL License #XXXXXX
             </div>
             <div className="flex items-center space-x-6 text-sm">
               <div className="bg-white/10 px-3 py-1 rounded-full">Australian Owned</div>

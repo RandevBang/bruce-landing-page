@@ -28,7 +28,7 @@ export function BusinessLogos() {
               >
                 <div className="text-center">
                   {/* Placeholder logo - in production, these would be actual logo images */}
-                  <div className="w-16 h-12 bg-gradient-to-r from-[#131A46] to-gray-400 rounded-md flex items-center justify-center mb-2">
+                  <div className="w-16 h-12 bg-gradient-to-r from-bruce-primary to-bruce-secondary rounded-md flex items-center justify-center mb-2">
                     <span className="text-white text-xs font-bold">
                       {business.slice(0, 2).toUpperCase()}
                     </span>

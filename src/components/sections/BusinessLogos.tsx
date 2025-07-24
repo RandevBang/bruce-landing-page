@@ -25,7 +25,7 @@ export function BusinessLogos() {
   ];
 
   return (
-    <section className="py-12 bg-gray-50 border-t border-gray-200">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
@@ -50,13 +50,6 @@ export function BusinessLogos() {
                 />
               </div>
             ))}
-          </div>
-          
-          {/* Additional trust indicators */}
-          <div className="text-center mt-8 pt-6 border-t border-gray-200">
-            <p className="text-sm text-gray-500">
-              Protecting 10,000+ tradespeople nationwide • AFSL Licensed • Australian Owned
-            </p>
           </div>
         </div>
       </div>

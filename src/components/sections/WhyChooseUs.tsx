@@ -1,36 +1,22 @@
-import { Shield, Clock, Award, Users, Phone, CheckCircle } from "lucide-react"
+import Image from 'next/image'
+import { Button } from "@/components/ui/button"
 
 export function WhyChooseUs() {
   const features = [
     {
-      icon: Shield,
-      title: "Comprehensive Coverage",
-      description: "Public liability, professional indemnity, and tools coverage tailored for your trade."
+      icon: "/images/icons/18leknh-features-icom-1_1000000000000000000028.png",
+      title: "Personal & Business Protection",
+      description: "Accidents happen but that shouldn't mean the end of your business"
     },
     {
-      icon: Clock,
-      title: "2-Minute Process",
-      description: "Quick application process with instant quotes and immediate policy documents."
+      icon: "/images/icons/1t1hyyl-features-icom_1000000000000000000028.png",
+      title: "Tools and Equipment Safety",
+      description: "Comprehensive coverage and fast replacement for stolen tools"
     },
     {
-      icon: Award,
-      title: "Industry Expertise",
-      description: "Specialized insurance solutions designed specifically for Australian tradespeople."
-    },
-    {
-      icon: Users,
-      title: "Trusted by Thousands",
-      description: "Join thousands of satisfied tradespeople who trust us with their insurance needs."
-    },
-    {
-      icon: Phone,
-      title: "24/7 Support",
-      description: "Round-the-clock customer support when you need help with claims or questions."
-    },
-    {
-      icon: CheckCircle,
-      title: "Competitive Pricing",
-      description: "Get the best value with our competitive rates and flexible payment options."
+      icon: "/images/icons/246np5-features-icom-2_1000000000000000000028.png",
+      title: "Peace of Mind on Site",
+      description: "With personal and public liability coverage you can get to work in peace"
     }
   ]
 
@@ -39,65 +25,45 @@ export function WhyChooseUs() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-bruce-primary mb-6">
-              Why Choose Our Trade Insurance?
+            <h2 className="text-3xl lg:text-4xl font-bold text-bruce-primary mb-6">
+              Why Choose Us
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We understand the unique challenges tradespeople face. Our insurance solutions 
-              are designed to protect what matters most to your business.
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              As a tradie, the right insurance is vital. It not only protects your business but also secures your future. Discover how our trade insurance benefits you:
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => {
-              const IconComponent = feature.icon
-              return (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                  <div className="bg-bruce-orange-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6 text-bruce-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-bruce-primary mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {feature.description}
-                  </p>
+          <div className="grid md:grid-cols-3 gap-12 mb-12">
+            {features.map((feature, index) => (
+              <div key={index} className="text-center">
+                <div className="flex items-center justify-center w-20 h-20 bg-bruce-orange-100 rounded-full mb-6 mx-auto">
+                  <Image
+                    src={feature.icon}
+                    alt={`${feature.title} icon`}
+                    width={40}
+                    height={40}
+                    className="filter"
+                  />
                 </div>
-              )
-            })}
+                <h3 className="text-xl font-semibold text-bruce-primary mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
           </div>
 
-          {/* Process Steps */}
-          <div className="mt-20">
-            <h3 className="text-2xl lg:text-3xl font-bold text-bruce-primary text-center mb-12">
-              Simple 3-Step Process
-            </h3>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-bruce-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                  1
-                </div>
-                <h4 className="text-lg font-semibold mb-2 text-bruce-primary">Fill Out Form</h4>
-                <p className="text-gray-600">Complete our quick form with your trade details and coverage needs.</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-bruce-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                  2
-                </div>
-                <h4 className="text-lg font-semibold mb-2 text-bruce-primary">Get Instant Quote</h4>
-                <p className="text-gray-600">Receive your personalized quote immediately with competitive pricing.</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-bruce-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                  3
-                </div>
-                <h4 className="text-lg font-semibold mb-2 text-bruce-primary">Get Covered</h4>
-                <p className="text-gray-600">Complete your purchase and receive your policy documents instantly.</p>
-              </div>
-            </div>
+          <div className="text-center">
+            <a href="#quote-form">
+              <Button 
+                size="lg"
+                className="bg-bruce-primary hover:bg-bruce-navy-700 text-white px-8 py-4 text-lg font-semibold rounded-full"
+              >
+                Get Your Quote Now
+              </Button>
+            </a>
           </div>
         </div>
       </div>

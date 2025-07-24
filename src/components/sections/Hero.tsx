@@ -15,25 +15,6 @@ export function Hero() {
 
   return (
     <section className="bg-white py-8 lg:py-16">
-      {/* Header Navigation */}
-      <div className="container mx-auto px-4 mb-8">
-        <div className="flex justify-between items-center">
-          <div className="flex items-center gap-8">
-            <Image
-              src="/images/logos/trades-logo.png"
-              alt="Trades Insurance Logo"
-              width={200}
-              height={60}
-              className="h-12 w-auto"
-            />
-          </div>
-          <div className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a href="#" className="text-gray-700 hover:text-bruce-primary">Our Team</a>
-            <a href="#" className="text-gray-700 hover:text-bruce-primary">Contact Us</a>
-          </div>
-        </div>
-      </div>
-
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Column - Content & Form */}

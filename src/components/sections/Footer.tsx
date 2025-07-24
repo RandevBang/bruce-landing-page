@@ -45,7 +45,7 @@ export function Footer() {
 
           {/* Bottom Text Bar */}
           <div className="border-t border-bruce-navy-700/30 mt-8 pt-8 flex flex-col md:flex-row justify-center items-center">
-            <div className="text-sm text-blue-200 mb-4 md:mb-0">
+            <div className="text-sm text-blue-200 mb-4 md:mb-0 text-justify">
             General advice on this website has been prepared without taking into account your objectives, financial situation or needs. Before acting on the advice, consider its appropriateness. Consider our disclosure documents, which include our Financial Services Guide (FSG) and the Product Disclosure Statements (PDS) for some products. © Bruce Insurance, Dental Essentials, Professional Essentials, Trades Insurance, Machine Insurance are trading names of Bruce Insurance Pty Ltd. (Licensed insurance brokers) AFS Licence: 238917 ACN: 009 048 677.
             </div>
           </div>

@@ -26,6 +26,10 @@ A modern, responsive landing page for Bruce Trades, designed to help Australian 
 - [Lucide React](https://lucide.dev/icons/)
 - [class-variance-authority](https://cva.style/) & [clsx](https://github.com/lukeed/clsx)
 
+## Deployment
+
+This project uses GitHub Actions for automated CI/CD deployment to Vercel. Every push to the main branch triggers a production deployment, and pull requests get preview deployments.
+
 ## Getting Started
 
 ### Prerequisites

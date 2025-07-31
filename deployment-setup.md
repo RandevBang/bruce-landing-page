@@ -419,9 +419,32 @@ git push -u origin hotfix/emergency-fix
 gh pr create --title "hotfix: emergency fix" --body "Critical issue fix"
 ```
 
-## 11. Advanced Configuration
+## 11. GitHub Actions CI/CD Setup (Implemented)
 
-### 11.1 Custom Domains
+### 11.1 Current Deployment Method
+This project now uses **GitHub Actions + Vercel CLI** for deployment instead of Vercel's Git integration to avoid team member permission issues on free plans.
+
+**Workflow files created:**
+- `.github/workflows/deploy.yml` - Automated deployment on push to main branch
+
+**GitHub Secrets configured:**
+- `VERCEL_TOKEN` - Vercel authentication token
+- `VERCEL_ORG_ID` - Organization ID for Bruce Trades account  
+- `VERCEL_PROJECT_ID` - Project ID for deployment targeting
+
+**Vercel settings configured:**
+- Ignored build step: `echo "Deployment handled by GitHub Actions" && exit 1`
+- Git status checks disabled to prevent red X commits
+
+### 11.2 Team Member Access
+Other developers can now:
+- Push to branches (creates preview deployments)
+- Create PRs to main branch (triggers production deployment)
+- No Vercel account access required - authentication handled by GitHub Secrets
+
+## 12. Advanced Configuration
+
+### 12.1 Custom Domains
 1. Vercel Dashboard → Project → Settings → Domains
 2. Add custom domain
 3. Configure DNS settings as instructed

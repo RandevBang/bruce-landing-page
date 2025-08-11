@@ -18,7 +18,7 @@ export function TrustedByTradies() {
             {/* Reviews Count */}
             <div className="text-center">
               <div className="font-bold text-bruce-primary mb-2" style={{fontSize: '36px'}}>
-                167
+                208
               </div>
               <div className="text-gray-600 font-medium" style={{lineHeight: '40px'}}>
                 Reviews

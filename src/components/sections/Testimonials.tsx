@@ -9,19 +9,19 @@ export function Testimonials() {
 
   const testimonials = [
     {
-      name: "Sandra S.",
-      image: "/images/testimonials/sandra-s.small.png",
-      content: "I highly recommend Trades Insurance to any person in business today. Some [people think they can do insurance without using a broker, I don't have the time and energy for this. Trades Insurance makes every process seamlessly simple and my claims are processed quickly with refunds I am very happy with. They are a very honest company that I trust."
+      name: "Gaven C.",
+      image: "/images/testimonials/gaven.png",
+      content: "Extremely smooth process and accommodating service from Paul @ Bruce insurance. Competitive pricing and the best for our company."
     },
     {
-      name: "Phil W.",
-      image: "/images/testimonials/phil-w.small.png", 
-      content: "IQPC have been using Trades Insurance since 1994. They have saved us hundreds of hours and MANY thousands of dollars finding the best deals, and handling the claims that inevitably arise when you are in business for such a long time. I have dealt with many of their staff over the years. They have always been highly professional and unfailingly competent. I cannot recommend them highly enough!"
+      name: "Rachel G.",
+      image: "/images/testimonials/rachel.png", 
+      content: "I deal With Sasha Gilby at Bruce insurance and she could not be more personable, and thoughtful when it comes to meeting my business insurance needs. I have been consistently using these guys for years now and I have not had any major issues."
     },
     {
-      name: "Andrew A.",
-      image: "/images/testimonials/andrew-a.small.png",
-      content: "Bebe has assisted me in defining the appropriate insurance for my new business venture. Especially beneficial was an enquiry I made post accepting the insurance and paying the premium ... wherein I needed to check coverage in a particular instance. Bebe extracted the relevant clauses from the policy and responded along with a brief explanation that addressed my concerns. Thank you Bebe!"
+      name: "Jennifer B.",
+      image: "/images/testimonials/jen.png",
+      content: "Their teamwork is seamless and intuitive, thanks to Sabrina, Erin, and Nick for their outstanding support. Bruce Insurance is dedicated to finding the right insurance coverage tailored to our business needs. They consistently search for the most competitive pricing and handle every query with impressive efficiency. It's like they're on autopilot. Cheers"
     }
   ]
 

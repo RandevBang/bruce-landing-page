@@ -18,7 +18,7 @@ export function Hero() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Column - Content & Form */}
-          <div className="order-2 lg:order-1">
+          <div className="order-1 lg:order-1">
             <h1 className="text-3xl lg:text-5xl font-bold text-bruce-primary mb-4 leading-tight">
               Instant Trades Insurance. Get covered in less than 2 minutes, all from just{" "}
               <span className="text-bruce-secondary">$35 per month.</span>
@@ -53,7 +53,7 @@ export function Hero() {
           </div>
 
           {/* Right Column - Hero Image */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="order-2 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative">
               <Image
                 src="/images/hero-tradesman.png"

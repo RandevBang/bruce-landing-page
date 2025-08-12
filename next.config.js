@@ -1,17 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async rewrites() {
-    return [
-      {
-        source: '/trades-quote',
-        destination: '/',
-      },
-      {
-        source: '/trades-quote/:path*',
-        destination: '/:path*',
-      },
-    ]
-  },
+  basePath: '/trades-quote',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig

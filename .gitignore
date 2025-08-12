@@ -34,4 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-EOF < /dev/null
+
+# Launch documentation (not for commit)
+LAUNCH-PLAN.md

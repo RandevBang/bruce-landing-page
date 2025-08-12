@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Bruce Trades Insurance - Get covered in less than 2 minutes',
   description: 'Instant trades insurance from just $35 per month. Comprehensive coverage for electricians, plumbers, builders and more. Get your quote today.',
   icons: {
-    icon: '/favicon.webp',
+    icon: '/images/favicon.png',
   },
 }
 
